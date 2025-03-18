@@ -21,12 +21,6 @@
       ]
     }
   },
-  "files": [
-    "package.json",
-    "README.md",
-    "LICENSE",
-    "target/wasm32-wasip1/release/swc_plugin_coverage.wasm"
-  ],
   "scripts": {
     "prepublishOnly": "npm-run-all test && npm run build:plugin -- --release",
     "build:all": "npm-run-all build:customtransform build:instrument build:plugin",
